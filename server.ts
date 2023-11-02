@@ -23,7 +23,7 @@ const resolvers = {
       // Replace with your authentication logic (e.g., check username and password)
       if (username === "user" && password === "password") {
         const token = sign({ username }, SECRET_KEY, {
-          expiresIn: "1h",
+          expiresIn: "1m",
         });
         return token;
       } else {
